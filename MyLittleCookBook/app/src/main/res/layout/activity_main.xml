@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a123"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Rozoviy2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="161dp"
+        android:background="@color/Rozoviy"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="My little cook book"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/plov"
+        android:layout_width="302dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="27dp"
+        android:text="Плов"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="302dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="27dp"
+        android:text="Роллы"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plov" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="302dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="27dp"
+        android:text="Хлопья"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="302dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="27dp"
+        android:text="Салаты"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
